@@ -15,12 +15,13 @@
 
 .white-bg{
     background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section{
@@ -89,7 +90,7 @@
     top: -7rem;
     display: grid;  
     grid-template-columns: 1fr 1.5fr;
-    height: 100vh;
+    min-height: 100vh;
     gap: var(--gap);
 }
 
@@ -115,4 +116,71 @@
 .intro-img img{
     max-width: 100%;
     height: auto;
+}
+
+.top3-content{
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+    gap: var(--gap);
+    text-align: center;
+}
+
+.grid-one-content{
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-main-heading {
+    margin-bottom: 2rem;
+}
+
+.grid-description{
+    padding-bottom: 5rem;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    margin-bottom: 3rem;
+   
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    top: -4rem;
+    left: -2rem;
+    font-size: 7rem;
+    font-style: italic;
+    transform: rotate(5deg);
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
