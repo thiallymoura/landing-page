@@ -87,7 +87,7 @@
 
 .intro-content{
     position: relative;
-    top: -7rem;
+    /* top: -7rem;  */
     display: grid;  
     grid-template-columns: 1fr 1.5fr;
     min-height: 100vh;
@@ -171,16 +171,100 @@
 }
 
 .gallery-img{
-    width: 100%;
+    width: 100%; 
     max-width: 36rem;
     max-height: 36rem;
-    overflow: hidden;
+    overflow: hidden; /*esconde o conteúdo que ultrapassar o tamanho da caixa*/
 }
 
 .gallery-img img{
-    transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; /*animação*/
 }
 
 .gallery-img img:hover{
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
+.contact-form{
+    grid-column: span 2; /*coloca o formulário em duas colunas*/
+}
+
+.contact-form .form-grid{
+    border: none; /*tira a borda do formulário*/
+    display: flex; /*coloca os campos lado a lado*/
+    flex-direction: row; /*coloca os campos lado a lado*/
+    flex-wrap: wrap; /*quebra as linhas para os campos ficarem lado a lado*/
+    gap: var(--gap);
+}
+
+.form-group{
+    flex: 1 1 32rem;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem; /*espaçamento interno*/
+    width: 100%;
+    font-size: 2rem;
+    outline: none;
+}
+
+.form-group input:focus, .form-group textarea:focus{
+    box-shadow: 0 0 0.5rem white;
+    
+}
+
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%; /* Cresce, encolhe e começa com 100% da largura */
+}
+
+.form-group button{
+    border: 0.3rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: #555;
+    font-size: 2rem;
+}
+
+.form-grid-legend{
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer a{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.footer p{
+    margin: 0;
+    padding: 3rem;;
+}
+
+
+
+

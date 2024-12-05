@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Tamanho da caixa */
 }
 html{
     font-size: 62.5%;
@@ -54,3 +55,38 @@ a {
 p{
     margin-bottom: 3rem;
 }
+
+.responsive-table{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+
+}
+
+
+table {
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as bordas */
+    
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+table th, table td {
+    white-space: nowrap; /* Evita que o texto seja quebrado */
+    border: 0.1rem solid var(--light-gray-color); /* Define bordas para as células */
+    padding: 0.8rem; /* Adiciona espaçamento dentro das células */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+tfoot, table th{
+    background-color: var(--light-gray-color);
+    color: var(--primary-color);
+}
+
