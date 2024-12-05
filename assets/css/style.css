@@ -128,6 +128,14 @@
     text-align: center;
 }
 
+.top3-content h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
 .grid-one-content{
     display: flex;
     flex-flow: column wrap; 
@@ -262,7 +270,7 @@ body .full-width{
 
 .footer p{
     margin: 0;
-    padding: 3rem;;
+    padding: 3rem;
 }
 
 .close-menu{
@@ -291,6 +299,10 @@ body .full-width{
     .intro-content, .grid{
         grid-template-columns: 1fr;   
 }
+    .top3-content h2, p{
+        width: 100%;
+        
+    }
 
     .gallery-img{
         width: 100%;
