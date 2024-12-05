@@ -301,19 +301,17 @@ body .full-width{
 }
     .top3-content h2, p{
         width: 100%;
-        
     }
 
     .gallery-img{
         width: 100%;
         height: auto;
-        max-width: 100%;
-        max-height: 100%;
+        
     }
 
     .gallery-img img{
         width: 100%;
-        height: auto; /* Mantém a proporção da imagem */
+        object-fit: cover;
     }  
     
     .menu {
