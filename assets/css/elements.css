@@ -1,50 +1,56 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Tamanho da caixa */
+    box-sizing: border-box;
+    /* Tamanho da caixa */
 }
-html{
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: "Open Sans", sans-serif;
     font-size: 2rem;
-    color: var(--primary-color);  
+    color: var(--primary-color);
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Montserrat", sans-serif;
 }
 
-h1{
+h1 {
     font-size: 6rem;
     text-transform: uppercase;
 }
 
-h2{
+h2 {
     font-size: 6rem;
     margin-bottom: 5rem;
     line-height: 1.2;
     text-transform: uppercase;
 }
 
-h3{
+h3 {
     font-size: 5rem;
 }
 
-h4{
+h4 {
     font-size: 4.5rem;
 }
 
-h5{
+h5 {
     font-size: 4rem;
 }
 
-h6{
+h6 {
     font-size: 3.5rem;
 }
 
@@ -52,11 +58,11 @@ a {
     text-decoration: none;
 }
 
-p{
+p {
     margin-bottom: 3rem;
 }
 
-.responsive-table{
+.responsive-table {
     width: 100%;
     overflow: hidden;
     overflow-x: auto;
@@ -67,26 +73,32 @@ p{
 table {
     min-width: 360px;
     width: 100%;
-    border-collapse: collapse; /* Remove espaços entre as bordas */
-    
+    border-collapse: collapse;
+    /* Remove espaços entre as bordas */
+
 }
 
-table caption{
+table caption {
     font-style: italic;
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
     text-align: left;
 }
 
-table th, table td {
-    white-space: nowrap; /* Evita que o texto seja quebrado */
-    border: 0.1rem solid var(--light-gray-color); /* Define bordas para as células */
-    padding: 0.8rem; /* Adiciona espaçamento dentro das células */
-    text-align: left; /* Alinha o texto à esquerda */
+table th,
+table td {
+    white-space: nowrap;
+    /* Evita que o texto seja quebrado */
+    border: 0.1rem solid var(--light-gray-color);
+    /* Define bordas para as células */
+    padding: 0.8rem;
+    /* Adiciona espaçamento dentro das células */
+    text-align: left;
+    /* Alinha o texto à esquerda */
 }
 
-tfoot, table th{
+tfoot,
+table th {
     background-color: var(--light-gray-color);
     color: var(--primary-color);
 }
-
